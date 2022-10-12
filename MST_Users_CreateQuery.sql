@@ -1,14 +1,14 @@
 USE [TST]
 GO
 
-/****** Object:  Table [dbo].[MST_User]    Script Date: 10/12/2022 2:58:03 PM ******/
+/****** Object:  Table [dbo].[MST_Users]    Script Date: 10/12/2022 2:58:03 PM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[MST_User](
+CREATE TABLE [dbo].[MST_Users](
 	[Id] [uniqueidentifier] NOT NULL,
 	[Name] [nvarchar](max) NOT NULL,
 	[RoleId] [uniqueidentifier] NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE [dbo].[MST_User](
 	[IsDeleted] [bit] NOT NULL,
 	[DeletedDate] [datetime2](7) NULL,
 	[DeletedBy] [uniqueidentifier] NULL,
- CONSTRAINT [PK_MST_User] PRIMARY KEY CLUSTERED 
+ CONSTRAINT [PK_MST_Users] PRIMARY KEY CLUSTERED
 (
 	[Id] ASC
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
